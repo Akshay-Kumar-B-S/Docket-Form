@@ -13,6 +13,8 @@ class Docket(models.Model):
     supplier_name = models.CharField(max_length=100)
     purchase_order = models.CharField(max_length=100)
 
+    url = models.URLField()
+
     def __str__(self):
         return self.name
 

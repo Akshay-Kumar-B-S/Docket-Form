@@ -13,5 +13,6 @@ def create_docket(request):
     else:
         form = DocketForm()
 
-    return render(request, 'create_docket.html', {'form': form})
+    form = {'insert_me': "I am a text from Home/Views.py"}
+    return render(request, 'create_docket.html',  {'form': form})
 
